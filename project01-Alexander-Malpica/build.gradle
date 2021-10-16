@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+repositories {
+    mavenCentral()
+}
+tasks.withType(JavaCompile) {
+    options.warnings = false
+}
+dependencies {
+	testImplementation('junit:junit:4.13')
+}
+mainClassName = 'prj_01.RRScheduler'
